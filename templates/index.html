@@ -31,11 +31,7 @@
         </div>
     </nav>
     <!-- Navbar End -->
-{%if message in messages%}
-<div class="alert alert-primary container-fluid col-12" role="alert">
-    {{message}}
-  </div>
-{%endif%}
+
 
     <!-- Header Start -->
     <div class="container-fluid bg-light my-6 mt-0" id="home">
@@ -84,6 +80,10 @@
     </div>
     <!-- Video Modal End -->
 
+{%if message in messages%}
+<div class="alert alert-primary container-fluid col-12" role="alert">
+    {{message}}  </div>
+{%endif%}
 
     <!-- About Start -->
     <div class="container-xxl py-6" id="about">
